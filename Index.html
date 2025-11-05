@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio — Neymar Brito</title>
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/a2e0adf5a1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Estilo para scroll suave -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body
+    class="min-h-screen bg-base-100 text-base-content transition-colors duration-300"
+  >
+    <nav
+      class="navbar bg-base-200 shadow-md sticky top-0 z-50 animate_animated animate_fadeInDown"
+    >
+      <div class="flex-1 px-4">
+        <a href="#inicio" class="text-xl font-bold">Neymar Brito</a>
+      </div>
+      <div class="flex-none gap-2 px-4">
+        <button
+          id="theme-button"
+          class="btn btn-ghost btn-circle p-3 transition-transform duration-300 hover:scale-110 focus:outline-none"
+          onclick="toggleTheme()"
+        >
+          <img src="./img/themes.png" alt="" />
+        </button>
+
+        <a
+          href="https://github.com/neybriramos-crypto"
+          target="_blank"
+          class="btn btn-primary btn-sm"
+        >
+          GitHub
+        </a>
+      </div>
+    </nav>
+
+    <section
+      id="inicio"
+      class="flex flex-col items-center justify-center text-center px-6 py-16"
+    >
+      <img
+        src="./img/photo.jpg"
+        alt="Foto de perfil"
+        class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full object-cover shadow-xl mx-auto mb-6 animate_animated animate_fadeIn"
+      />
+      <h1 class="text-3xl font-bold mb-2 animate_animated animate_fadeInUp">
+        ¡Hola! Soy Neymar Brito
+      </h1>
+      <p
+        class="text-gray-600 dark:text-gray-300 max-w-md animate_animated animatefadeInUp animate_delay-1s"
+      >
+        Desarrolladora web apasionada por crear interfaces modernas, rápidas y
+        funcionales.
+      </p>
+      <div
+        class="mt-4 flex gap-3 animate_animated animatefadeInUp animate_delay-2s"
+      >
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-outline">Contáctame</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="px-6 py-12 max-w-4xl mx-auto" data-aos="fade-up">
+      <h2 class="text-2xl font-bold mb-4">Sobre mí</h2>
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+        Soy una desarrolladora web con enfoque en el diseño responsive, la
+        accesibilidad y la optimización de experiencias de usuario. Trabajo con
+        tecnologías modernas como HTML, CSS, TailwindCSS.
+      </p>
+    </section>
+
+    <section
+      id="proyectos"
+      class="px-6 py-12 max-w-6xl mx-auto"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      <h2 class="text-2xl font-bold mb-6 text-center">Proyectos</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          class="card bg-base-200 shadow-md hover:shadow-lg transition"
+          data-aos="zoom-in"
+        >
+          <div class="card-body">
+            <h3 class="card-title">Proyecto 1</h3>
+            <p>CV realizado unicamente con HTML</p>
+            <div class="card-actions justify-end">
+              <a
+                href="https://github.com/neybriramos-crypto/CV"
+                class="btn btn-sm btn-primary"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card bg-base-200 shadow-md hover:shadow-lg transition"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <div class="card-body">
+            <h3 class="card-title">Proyecto 2</h3>
+            <p>Interfaz de YouTube responsive</p>
+            <div class="card-actions justify-end">
+              <a
+                href="https://github.com/neybriramos-crypto/RepoNeymar"
+                class="btn btn-sm btn-primary"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card bg-base-200 shadow-md hover:shadow-lg transition"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <div class="card-body">
+            <h3 class="card-title">Proyecto 3</h3>
+            <p>Recreacion de la pagina web de Instagram</p>
+            <div class="card-actions justify-end">
+              <a
+                href="https://github.com/neybriramos-crypto/Proyecto-SASS"
+                class="btn btn-sm btn-primary"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tecnologías dominadas -->
+    <section id="skills" class="py-16 bg-base-200">
+      <div class="max-w-5xl mx-auto text-center">
+        <h2
+          class="text-4xl font-bold mb-12"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Tecnologías dominadas
+        </h2>
+
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center"
+        >
+          <div
+            class="flex flex-col items-center"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML Logo"
+              class="w-16 h-16 animate_animated animate_bounceIn"
+            />
+            <p class="mt-3 font-semibold">HTML</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS Logo"
+              class="w-16 h-16 animate_animated animate_bounceIn"
+            />
+            <p class="mt-3 font-semibold">CSS</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript Logo"
+              class="w-16 h-16 animate_animated animate_bounceIn"
+            />
+            <p class="mt-3 font-semibold">JavaScript</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+              alt="PHP Logo"
+              class="w-16 h-16 animate_animated animate_bounceIn"
+            />
+            <p class="mt-3 font-semibold">PHP</p>
+          </div>
+
+          <div
+            class="flex flex-col items-center"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <img
+              src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+              alt="TailwindCSS Logo"
+              class="w-16 h-16 animate_animated animate_bounceIn"
+            />
+            <p class="mt-3 font-semibold">TailwindCSS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contacto"
+      class="px-6 py-12 max-w-4xl mx-auto text-center"
+      data-aos="fade-up"
+    >
+      <h2 class="text-2xl font-bold mb-6">Contacto</h2>
+      <form class="flex flex-col gap-4 max-w-md mx-auto">
+        <input
+          type="text"
+          placeholder="Tu nombre"
+          class="input input-bordered w-full"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Tu correo"
+          class="input input-bordered w-full"
+          required
+        />
+        <textarea
+          class="textarea textarea-bordered w-full"
+          rows="4"
+          placeholder="Mensaje..."
+        ></textarea>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+
+    <footer
+      class="footer footer-center p-6 bg-base-200 text-base-content animate_animated animate_fadeInUp"
+    >
+      <p>
+        <span id="year"></span>© Neymar Brito — Hecho con TailwindCSS, DaisyUI,
+        Flowbite, Animate.css y AOS
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({ duration: 800, once: true });
+      function toggleTheme() {
+        const html = document.documentElement;
+        const currentTheme = html.getAttribute("data-theme");
+        html.setAttribute(
+          "data-theme",
+          currentTheme === "light" ? "dark" : "light"
+        );
+      }
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
